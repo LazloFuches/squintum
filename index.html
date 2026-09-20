@@ -186,14 +186,33 @@ body {
   margin-bottom: 0;
 }
 
-.section-label {
+.writing-toggle {
+  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+}
+
+.writing-toggle summary {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--muted);
   padding: 12px 0;
-  border-bottom: 1px solid var(--rule);
+  list-style: none;
+}
+
+.writing-toggle summary::-webkit-details-marker { display: none; }
+
+.writing-toggle summary::after {
+  content: '+';
+  float: right;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.writing-toggle[open] summary::after {
+  content: '\2212';
 }
 
 /* --- FOOTER --- */
@@ -301,25 +320,26 @@ footer a:hover {
   </div>
 
   <hr class="section-rule">
-  <div class="section-label">Writing</div>
-
-  <div class="projects">
-    <div class="project c-warm">
-      <div class="project-header">
-        <h2><a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">The Bread Factory Question</a></h2>
-        <span class="project-type t-writing">Hyperallergic</span>
+  <details class="writing-toggle">
+    <summary>Writing</summary>
+    <div class="projects">
+      <div class="project c-warm">
+        <div class="project-header">
+          <h2><a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">The Bread Factory Question</a></h2>
+          <span class="project-type t-writing">Hyperallergic</span>
+        </div>
+        <p>Ottawa's artist studios face an uncertain future as a converted bread factory is sold to developers.</p>
       </div>
-      <p>Ottawa's artist studios face an uncertain future as a converted bread factory is sold to developers.</p>
-    </div>
 
-    <div class="project c-warm">
-      <div class="project-header">
-        <h2><a href="https://dartmagazine.com/?p=2984">Carol Bruns at White Columns</a></h2>
-        <span class="project-type t-writing">D'art International</span>
+      <div class="project c-warm">
+        <div class="project-header">
+          <h2><a href="https://dartmagazine.com/?p=2984">Carol Bruns at White Columns</a></h2>
+          <span class="project-type t-writing">D'art International</span>
+        </div>
+        <p>Masks, totems, and archaic effigies. A review of sculptor Carol Bruns at White Columns in New York.</p>
       </div>
-      <p>Masks, totems, and archaic effigies. A review of sculptor Carol Bruns at White Columns in New York.</p>
     </div>
-  </div>
+  </details>
 
   <footer>
     <p>Robert Egert (b. 1958, Brooklyn) is a painter whose work spans four decades, moving between figuration, abstraction, and abstract narrative. He received his BFA from Pratt Institute and an MLA from the City University of New York Center for Cultural Studies. Egert began exhibiting in the early 1980s at Civilian Warfare, White Columns, and Holly Solomon in New York. His subsequent projects have explored themes of environmental crisis, posthumanism, and the boundaries between the organic and the constructed, drawing on sources from Ovid to Octavia Butler. Major series include Morphopolis, Anthropocene, Gothic Interiors, Nocturnes, and Small Worlds. His paintings are held in private and institutional collections in the United States and Europe.</p>
