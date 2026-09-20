@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Squintum's — A Cabinet of Esoteric Curiosities</title>
-<meta name="description" content="Squintum's: paintings by Robert Egert, art writing, the Situation Engine job search tool, Studio Space Ottawa, and other projects.">
+<title>Squintum's</title>
+<meta name="description" content="Squintum's: paintings, projects, and other concerns by Robert Egert.">
 <link rel="canonical" href="https://squintum.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://squintum.com/">
 <meta property="og:title" content="Squintum's">
-<meta property="og:description" content="Paintings by Robert Egert, art writing, the Situation Engine job search tool, Studio Space Ottawa, and other projects.">
+<meta property="og:description" content="Paintings, projects, and other concerns by Robert Egert.">
 <meta property="og:image" content="https://squintum.com/picture-gallery.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:alt" content="The gallery of Robert Egert, painter">
@@ -21,7 +21,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Squintum's">
-<meta name="twitter:description" content="Paintings by Robert Egert, art writing, the Situation Engine job search tool, Studio Space Ottawa, and other projects.">
+<meta name="twitter:description" content="Paintings, projects, and other concerns by Robert Egert.">
 <meta name="twitter:image" content="https://squintum.com/picture-gallery.jpg">
 
 <!-- JSON-LD Structured Data -->
@@ -32,7 +32,7 @@
   "name": "Squintum's",
   "alternateName": "Squintum",
   "url": "https://squintum.com",
-  "description": "Paintings, art writing, and projects by Robert Egert",
+  "description": "Paintings, projects, and other concerns by Robert Egert",
   "publisher": {
     "@type": "Person",
     "name": "Robert Egert",
@@ -43,361 +43,290 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display+SC:wght@400;700;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-  body {
-    background-color: #ffffff;
-    font-family: 'Lora', 'Georgia', serif;
-    color: #1a1a1a;
-    line-height: 1.5;
-    font-size: 15px;
-  }
+:root {
+  --warm: #E8A832;
+  --cool: #6B8FA3;
+  --vibrant: #E85D30;
+  --dark: #1E2832;
+  --bg: #E8E6E1;
+  --rule: #C8C5BF;
+  --muted: #6A6862;
+}
 
-  .page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 30px 60px;
-  }
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  font-size: 16px;
+  line-height: 1.6;
+}
 
-  /* ---- HEADER ---- */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 32px 80px;
+}
 
-  .masthead {
-    text-align: center;
-    padding: 30px 0 10px;
-    border-bottom: 4px double #1a1a1a;
-    margin-bottom: 4px;
-  }
+/* --- HEADER --- */
+.masthead {
+  margin-bottom: 8px;
+}
 
-  .masthead-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 11px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
+.masthead h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
 
-  .masthead h1 {
-    font-family: 'Old Standard TT', 'Georgia', serif;
-    font-size: clamp(48px, 8vw, 96px);
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.02em;
-    margin: 0;
-  }
+.masthead-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 12px 0;
+  border-top: 3px solid var(--dark);
+  border-bottom: 1px solid var(--rule);
+}
 
-  .masthead-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-style: italic;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-top: 6px;
-  }
+.tagline {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
 
-  .masthead-rule {
-    border: none;
-    border-top: 1px solid #1a1a1a;
-    margin: 0;
-  }
+/* --- PROJECT LIST --- */
+.projects {
+  margin-top: 40px;
+}
 
-  .masthead-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 11px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 6px 0;
-    border-bottom: 2px solid #1a1a1a;
-    margin-bottom: 20px;
-  }
+.project {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+}
 
-  /* ---- COLUMNS ---- */
+.project:first-child {
+  border-top: 1px solid var(--rule);
+}
 
-  .columns {
-    column-count: 3;
-    column-gap: 28px;
-    column-rule: 1px solid #1a1a1a;
-  }
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 6px;
+}
 
-  /* ---- ARTICLES ---- */
+.project h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
 
-  .article {
-    break-inside: avoid;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-  }
+.project h2 a {
+  color: var(--dark);
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
 
-  .article-divider {
-    border: none;
-    border-top: 1px solid #1a1a1a;
-    width: 40%;
-    margin: 0 auto 14px;
-  }
+.project h2 a:hover {
+  border-bottom: 2px solid var(--dark);
+}
 
-  .article img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
+.project.c-vibrant h2 a:hover  { background-color: var(--vibrant); }
+.project.c-cool h2 a:hover     { background-color: var(--cool); }
+.project.c-warm h2 a:hover     { background-color: var(--warm); }
+.project.c-dark h2 a:hover     { background-color: var(--dark); color: #fff; }
 
-  .article h2 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 1.15;
-    text-align: center;
-    margin-bottom: 4px;
-  }
+.project-type {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
-  .article h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 13px;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 10px;
-    letter-spacing: 0.04em;
-  }
+.project-type.t-paintings  { background: var(--vibrant); }
+.project-type.t-studios    { background: var(--cool); }
+.project-type.t-talks      { background: var(--warm); color: var(--dark); }
+.project-type.t-design     { background: var(--dark); }
+.project-type.t-tool       { background: var(--vibrant); }
+.project-type.t-private    { background: var(--cool); }
+.project-type.t-writing    { background: var(--warm); color: var(--dark); }
 
-  .article p {
-    text-align: justify;
-    text-indent: 1.2em;
-    margin-bottom: 6px;
-    hyphens: auto;
-  }
+.project p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 560px;
+}
 
-  .columns {
-    counter-reset: article-num;
-  }
+/* --- WRITING --- */
+.section-rule {
+  border: none;
+  border-top: 3px solid var(--dark);
+  margin-top: 48px;
+  margin-bottom: 0;
+}
 
-  .article {
-    counter-increment: article-num;
-  }
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
 
-  .article p:first-of-type {
-    text-indent: 0;
-  }
+/* --- FOOTER --- */
+footer {
+  margin-top: 64px;
+  padding-top: 16px;
+  border-top: 3px solid var(--dark);
+}
 
-  .article p:first-of-type::before {
-    content: counter(article-num) ".";
-    font-family: 'Playfair Display', serif;
-    font-size: 3.2em;
-    float: left;
-    line-height: 0.8;
-    margin: 4px 8px 0 0;
-    font-weight: 900;
-  }
+footer p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 480px;
+}
 
-  .article .byline {
-    font-size: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-bottom: 8px;
-    font-style: normal;
-  }
+footer a {
+  color: var(--dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
 
-  .article a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-  }
+footer a:hover {
+  border-color: var(--vibrant);
+}
 
-  .article a:hover {
-    text-decoration-thickness: 2px;
-  }
+.copyright {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-top: 24px;
+}
 
-  /* ---- FOOTER ---- */
-
-  .site-footer {
-    border-top: 1px solid #1a1a1a;
-    margin-top: 40px;
-    padding-top: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-bio {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    max-width: 600px;
-  }
-
-  .footer-bio img {
-    width: 64px;
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .footer-bio p {
-    font-size: 13px;
-    line-height: 1.6;
-    text-align: left;
-    margin: 0;
-  }
-
-  .site-footer .copyright {
-    font-size: 11px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-top: 12px;
-  }
-
-  .site-footer a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-  }
-
-  .site-footer a:hover {
-    text-decoration-thickness: 2px;
-  }
-
-  /* ---- RESPONSIVE ---- */
-
-  @media (max-width: 900px) {
-    .columns {
-      column-count: 2;
-    }
-    .page {
-      padding: 15px 20px 40px;
-    }
-  }
-
-  @media (max-width: 560px) {
-    .columns {
-      column-count: 1;
-    }
-    .page {
-      padding: 10px 15px 30px;
-    }
-    .masthead h1 {
-      font-size: 42px;
-    }
-    .masthead-top,
-    .masthead-info {
-      flex-direction: column;
-      align-items: center;
-      gap: 2px;
-    }
-  }
+@media (max-width: 560px) {
+  .page { padding: 40px 20px 60px; }
+  .masthead h1 { font-size: 42px; }
+  .project-header { flex-direction: column; gap: 4px; }
+}
 </style>
 </head>
 <body>
 <div class="page">
 
   <header class="masthead">
-    <div class="masthead-top">
-      <span>Robert Egert</span>
-      <span>Art, Writing &amp; Projects</span>
-    </div>
     <h1>Squintum's</h1>
-    <p class="masthead-subtitle">Selected Work</p>
+    <p class="tagline">Art, projects, and other concerns</p>
   </header>
-  <hr class="masthead-rule">
-  <div class="masthead-info">
-    <span id="pub-date"></span>
-<span>Brooklyn, New York</span>
+  <div class="masthead-meta">
+    <span>Robert Egert</span>
+    <span>Ottawa, Ontario</span>
   </div>
 
-  <div class="columns">
+  <div class="projects">
 
-    <article class="article">
-      <a href="https://robertegert.com"><img src="picture-gallery.jpg" alt="The gallery of Robert Egert, painter" width="1248" height="832"></a>
-      <h2><a href="https://robertegert.com">The Paintings of Robert Egert</a></h2>
-      <h3>Original Paintings</h3>
-      <p class="byline">Robert Egert</p>
-      <p>Original oil paintings by Robert Egert, available for viewing and purchase. Work ranges across abstraction and abstract narrative in various dimensions. Browse the full <a href="https://robertegert.com">collection</a> online.</p>
-    </article>
-
-    <article class="article">
-      <hr class="article-divider">
-      <a href="https://job-search-frontend.pages.dev"><img src="telescope-man.jpg" alt="A man searching the horizon through a telescope" width="1248" height="832" loading="lazy"></a>
-      <h2><a href="https://job-search-frontend.pages.dev">The Situation Engine</a></h2>
-      <h3>AI-Powered Job Search</h3>
-      <p class="byline">Egert &amp; Sons</p>
-      <p>An AI-powered job search tool that reads your resume, scans open positions, and surfaces relevant matches. Upload your qualifications, set your preferences, and let the engine handle the searching.</p>
-    </article>
-
-    <article class="article">
-      <hr class="article-divider">
-      <a href="https://studiospaceottawa.ca"><img src="studio.jpg" alt="An artist's studio, cluttered with easels and canvasses" width="1248" height="832" loading="lazy"></a>
-      <h2><a href="https://studiospaceottawa.ca">Studio Space Ottawa</a></h2>
-      <h3>Working Spaces for Working Artists</h3>
-      <p class="byline">2477-A Kaladar Avenue, Ottawa</p>
-      <p>Forty private artist studios in Ottawa at affordable rates. Well-lit spaces with finished walls, run by working artists. Open to painters, sculptors, and other practitioners at any career stage. Visit the <a href="https://studiospaceottawa.ca">Studio Space Ottawa</a> website for availability and details.</p>
-    </article>
-
-    <article class="article">
-      <hr class="article-divider">
-      <a href="/vases/"><img src="vases-illustration.jpg" alt="Five ancient Greek vases arranged on a shelf, rendered in engraving style" width="1248" height="832" loading="lazy"></a>
-      <h2><a href="/vases/">Three Attic Vases from a Private Collection</a></h2>
-      <h3>Geometric, Archaic &amp; Classical Periods</h3>
-      <p class="byline">750 - 400 B.C.</p>
-      <p>Three ancient Greek ceramic vessels spanning nearly four centuries of Attic production: a Geometric skyphos with water birds, a black-figure lip cup attributed to Tleson, and a white-ground funerary lekythos. Full provenance, condition reports, and scholarly documentation.</p>
-    </article>
-
-    <article class="article">
-      <hr class="article-divider">
-      <h2><a href="/collection/">Collection</a></h2>
-      <h3>Private Catalogue</h3>
-      <p class="byline">Password Required</p>
-      <p>A private catalogue of the full collection, including contemporary works, antiquities, and works on paper. Access is restricted to authorized viewers.</p>
-    </article>
-
-    <article class="article">
-      <hr class="article-divider">
-      <a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/"><img src="hyperallergic.jpg" alt="The Enriched Bread Artists building in Ottawa" width="1248" height="832" loading="lazy"></a>
-      <h2><a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">The Bread Factory Question</a></h2>
-      <h3>Ottawa's Artist Studios Face an Uncertain Future</h3>
-      <p class="byline">Robert Egert, Hyperallergic</p>
-      <p>Nearly a hundred artists work out of a converted bread factory in Ottawa. The building has been sold to developers, and the future of the studios is uncertain. Read the full <a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">article in Hyperallergic</a>.</p>
-    </article>
-
-    <article class="article">
-      <hr class="article-divider">
-      <a href="https://dartmagazine.com/?p=2984"><img src="dart-international.jpg" alt="A sculptural effigy by Carol Bruns" width="1248" height="832" loading="lazy"></a>
-      <h2><a href="https://dartmagazine.com/?p=2984">Carol Bruns at White Columns</a></h2>
-      <h3>Masks, Totems &amp; Archaic Effigies at White Columns</h3>
-      <p class="byline">Robert Egert, D'art International</p>
-      <p>A review of sculptor Carol Bruns and her exhibition of masks, totems, and distorted effigies at White Columns in New York. The work draws on traditions from West Africa to archaic Greece while remaining distinctly contemporary. Read the full <a href="https://dartmagazine.com/?p=2984">review in D'art International</a>.</p>
-    </article>
-
-  </div>
-
-  <footer class="site-footer">
-    <div class="footer-bio">
-      <img src="un-homme-profound.jpg" alt="Portrait of Robert Egert" width="1248" height="832" loading="lazy">
-      <p>Robert Egert is a painter and writer based in New York. His work is held in collections in the US and Europe. He writes about art for Hyperallergic, D'art International, and other publications. <a href="https://www.instagram.com/robert_egert/">Instagram</a></p>
+    <div class="project c-vibrant">
+      <div class="project-header">
+        <h2><a href="https://robertegert.com">Paintings by Robert Egert</a></h2>
+        <span class="project-type t-paintings">Paintings</span>
+      </div>
+      <p>Original oil paintings in abstraction and abstract narrative. Browse the full collection online.</p>
     </div>
+
+    <div class="project c-cool" style="display:none;">
+      <div class="project-header">
+        <h2><a href="https://studiospaceottawa.ca">Studio Space Ottawa</a></h2>
+        <span class="project-type t-studios">Studios</span>
+      </div>
+      <p>Forty private artist studios in Ottawa at affordable rates. Well-lit spaces with finished walls, run by working artists.</p>
+    </div>
+
+    <div class="project c-warm">
+      <div class="project-header">
+        <h2><a href="https://praxisottawa.ca">Praxis Ottawa</a></h2>
+        <span class="project-type t-talks">Artist Talks</span>
+      </div>
+      <p>A series of artist talks and exhibitions at Studio Space Ottawa, organized by working artists for working artists.</p>
+    </div>
+
+    <div class="project c-dark">
+      <div class="project-header">
+        <h2><a href="https://motikon.ca">Motikon</a></h2>
+        <span class="project-type t-design">Design</span>
+      </div>
+      <p>Web design and communications automation for Canadian cultural nonprofits.</p>
+    </div>
+
+    <div class="project c-vibrant">
+      <div class="project-header">
+        <h2><a href="https://job-search-frontend.pages.dev">The Situation Engine</a></h2>
+        <span class="project-type t-tool">AI Tool</span>
+      </div>
+      <p>An AI-powered job search tool that reads your resume, scans open positions, and surfaces relevant matches.</p>
+    </div>
+
+    <div class="project c-cool">
+      <div class="project-header">
+        <h2><a href="/collection/">Collection</a></h2>
+        <span class="project-type t-private">Private</span>
+      </div>
+      <p>A private catalogue of the full collection, including contemporary works, antiquities, and works on paper.</p>
+    </div>
+
+  </div>
+
+  <hr class="section-rule">
+  <div class="section-label">Writing</div>
+
+  <div class="projects">
+    <div class="project c-warm">
+      <div class="project-header">
+        <h2><a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">The Bread Factory Question</a></h2>
+        <span class="project-type t-writing">Hyperallergic</span>
+      </div>
+      <p>Ottawa's artist studios face an uncertain future as a converted bread factory is sold to developers.</p>
+    </div>
+
+    <div class="project c-warm">
+      <div class="project-header">
+        <h2><a href="https://dartmagazine.com/?p=2984">Carol Bruns at White Columns</a></h2>
+        <span class="project-type t-writing">D'art International</span>
+      </div>
+      <p>Masks, totems, and archaic effigies. A review of sculptor Carol Bruns at White Columns in New York.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Robert Egert (b. 1958, Brooklyn) is a painter whose work spans four decades, moving between figuration, abstraction, and abstract narrative. He received his BFA from Pratt Institute and an MLA from the City University of New York Center for Cultural Studies. Egert began exhibiting in the early 1980s at Civilian Warfare, White Columns, and Holly Solomon in New York. His subsequent projects have explored themes of environmental crisis, posthumanism, and the boundaries between the organic and the constructed, drawing on sources from Ovid to Octavia Butler. Major series include Morphopolis, Anthropocene, Gothic Interiors, Nocturnes, and Small Worlds. His paintings are held in private and institutional collections in the United States and Europe.</p>
     <p class="copyright">&copy; Robert Egert</p>
   </footer>
 
 </div>
-<script>
-  (function () {
-    var today = new Date();
-    var month = today.toLocaleDateString('en-US', { month: 'long' });
-    var day = today.getDate();
-    var year = today.getFullYear();
-    document.getElementById('pub-date').textContent = month + ' ' + day + ', ' + year;
-  })();
-</script>
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d8b18d3b2d6443efa33a87aca33cb936"}'></script>
 <!-- End Cloudflare Web Analytics -->
