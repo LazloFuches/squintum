@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>* Squintum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --dark: #1E2832;
+  --bg: #E8E6E1;
+  --rule: #C8C5BF;
+  --muted: #6A6862;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 64px 32px 80px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.rule {
+  border: none;
+  border-top: 3px solid var(--dark);
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.back:hover {
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+@media (max-width: 560px) {
+  .page { padding: 40px 20px 60px; }
+  h1 { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Squintum</h1>
+  <hr class="rule">
+  <p>"Dr. Squintum" was a satirical nickname for George Whitefield (1714-1770), the English evangelist whose open-air preaching helped ignite the Great Awakening across Britain and the American colonies. The name mocked his esotropia, a form of strabismus that left him permanently cross-eyed. His detractors found the condition hilarious. His audiences found it unnerving and strangely magnetic: the misalignment of his eyes made individuals in large crowds feel he was looking directly at them.</p>
+  <p>Whitefield was ordained at twenty-two and almost immediately began drawing crowds too large for any church to hold. He preached outdoors to coal miners, dockworkers, and colonial settlers, often reducing thousands to tears. Benjamin Franklin, a skeptic, attended a sermon in Philadelphia intending to give nothing and left having emptied his pockets. The established clergy despised him. In 1760, the playwright Samuel Foote burlesqued him in <em>The Minor</em>, and a 1763 political cartoon depicted "Dr. Squintum's Exaltation" as a kind of religious circus.</p>
+  <p>The name stuck in popular culture long after Whitefield's death, drifting free of its original target and becoming a general term for anyone whose gaze was a little off, whose fixations were a little intense, whose enthusiasms made polite company nervous. This site borrows the name in that spirit.</p>
+  <a class="back" href="/">Back</a>
+</div>
+</body>
+</html>
