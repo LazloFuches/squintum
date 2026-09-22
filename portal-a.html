@@ -3,44 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Squintum's</title>
-<meta name="description" content="Squintum's: paintings, projects, and other concerns by Robert Egert.">
-<link rel="canonical" href="https://squintum.com/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://squintum.com/">
-<meta property="og:title" content="Squintum's">
-<meta property="og:description" content="Paintings, projects, and other concerns by Robert Egert.">
-<meta property="og:image" content="https://squintum.com/picture-gallery.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:alt" content="The gallery of Robert Egert, painter">
-<meta property="og:site_name" content="Squintum's">
-<meta property="og:locale" content="en_US">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Squintum's">
-<meta name="twitter:description" content="Paintings, projects, and other concerns by Robert Egert.">
-<meta name="twitter:image" content="https://squintum.com/picture-gallery.jpg">
-
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Squintum's",
-  "alternateName": "Squintum",
-  "url": "https://squintum.com",
-  "description": "Paintings, projects, and other concerns by Robert Egert",
-  "publisher": {
-    "@type": "Person",
-    "name": "Robert Egert",
-    "url": "https://robertegert.com"
-  }
-}
-</script>
-
+<title>Portal A — Marigold + Slate</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -71,6 +34,15 @@ body {
   padding: 64px 32px 80px;
 }
 
+.variant-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  margin-bottom: 48px;
+}
+
 /* --- HEADER --- */
 .masthead {
   margin-bottom: 8px;
@@ -82,15 +54,6 @@ body {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.03em;
-}
-
-.asterisk {
-  color: var(--vibrant);
-  text-decoration: none;
-}
-
-.asterisk:hover {
-  color: var(--warm);
 }
 
 .masthead-meta {
@@ -154,9 +117,9 @@ body {
   border-bottom: 2px solid var(--dark);
 }
 
-.project.c-vibrant h2 a:hover  { background-color: var(--vibrant); color: #fff; }
-.project.c-cool h2 a:hover     { background-color: var(--cool); color: #fff; }
-.project.c-warm h2 a:hover     { background-color: var(--warm); color: #fff; }
+.project.c-vibrant h2 a:hover  { background-color: var(--vibrant); }
+.project.c-cool h2 a:hover     { background-color: var(--cool); }
+.project.c-warm h2 a:hover     { background-color: var(--warm); }
 .project.c-dark h2 a:hover     { background-color: var(--dark); color: #fff; }
 
 .project-type {
@@ -195,33 +158,14 @@ body {
   margin-bottom: 0;
 }
 
-.writing-toggle {
-  border-bottom: 1px solid var(--rule);
-  cursor: pointer;
-}
-
-.writing-toggle summary {
+.section-label {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--muted);
   padding: 12px 0;
-  list-style: none;
-}
-
-.writing-toggle summary::-webkit-details-marker { display: none; }
-
-.writing-toggle summary::after {
-  content: '+';
-  float: right;
-  font-size: 14px;
-  font-weight: 500;
-  transition: transform 0.2s;
-}
-
-.writing-toggle[open] summary::after {
-  content: '\2212';
+  border-bottom: 1px solid var(--rule);
 }
 
 /* --- FOOTER --- */
@@ -267,8 +211,10 @@ footer a:hover {
 <body>
 <div class="page">
 
+  <div class="variant-label">Portal A -- Marigold + Slate / Space Grotesk + IBM Plex Mono</div>
+
   <header class="masthead">
-    <h1>Squintum<a href="/squintum.html" class="asterisk">*</a></h1>
+    <h1>Squintum's</h1>
     <p class="tagline">Art, projects, and other concerns</p>
   </header>
   <div class="masthead-meta">
@@ -329,26 +275,25 @@ footer a:hover {
   </div>
 
   <hr class="section-rule">
-  <details class="writing-toggle">
-    <summary>Writing</summary>
-    <div class="projects">
-      <div class="project c-warm">
-        <div class="project-header">
-          <h2><a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">The Bread Factory Question</a></h2>
-          <span class="project-type t-writing">Hyperallergic</span>
-        </div>
-        <p>Ottawa's artist studios face an uncertain future as a converted bread factory is sold to developers.</p>
-      </div>
+  <div class="section-label">Writing</div>
 
-      <div class="project c-warm">
-        <div class="project-header">
-          <h2><a href="https://dartmagazine.com/?p=2984">Carol Bruns at White Columns</a></h2>
-          <span class="project-type t-writing">D'art International</span>
-        </div>
-        <p>Masks, totems, and archaic effigies. A review of sculptor Carol Bruns at White Columns in New York.</p>
+  <div class="projects">
+    <div class="project c-warm">
+      <div class="project-header">
+        <h2><a href="https://hyperallergic.com/ottawa-bread-factory-turned-artists-studios-faces-uncertain-future/">The Bread Factory Question</a></h2>
+        <span class="project-type t-writing">Hyperallergic</span>
       </div>
+      <p>Ottawa's artist studios face an uncertain future as a converted bread factory is sold to developers.</p>
     </div>
-  </details>
+
+    <div class="project c-warm">
+      <div class="project-header">
+        <h2><a href="https://dartmagazine.com/?p=2984">Carol Bruns at White Columns</a></h2>
+        <span class="project-type t-writing">D'art International</span>
+      </div>
+      <p>Masks, totems, and archaic effigies. A review of sculptor Carol Bruns at White Columns in New York.</p>
+    </div>
+  </div>
 
   <footer>
     <p>Robert Egert is a painter who has been exploring the boundaries between abstraction and narrative for over four decades. Exhibiting since the 1980s, his work is held in private and institutional collections in the US and Europe. He has also written on art for publications including Flash Art International and Hyperallergic.</p>
@@ -356,8 +301,5 @@ footer a:hover {
   </footer>
 
 </div>
-<!-- Cloudflare Web Analytics -->
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d8b18d3b2d6443efa33a87aca33cb936"}'></script>
-<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
