@@ -19,7 +19,9 @@ INSERT INTO artworks (slug, sort_order, title, artist, category, date_text, peri
   'White chalk on black advertising-space paper',
   '',
   '',
-  'An original subway drawing by Keith Haring, executed in white chalk on the matte black paper used to cover expired advertising panels in the New York City subway system. Haring produced thousands of these drawings between 1980 and 1985, working quickly in public, often attracting crowds of commuters. The drawings were never intended to be permanent and most were destroyed, peeled away, or painted over, making surviving examples rare.',
+  'An original subway drawing by Keith Haring, executed in white chalk on the matte black paper used to cover expired advertising panels in the New York City subway system. Haring produced thousands of these drawings between 1980 and 1985, working quickly in public, often attracting crowds of commuters. The drawings were never intended to be permanent and most were destroyed, peeled away, or painted over, making surviving examples rare.
+
+The accompanying photograph is by Tseng Kwong Chi (1950-1990), a photographer and close friend of Haring who systematically documented the subway drawings as Haring made them. Tseng Kwong Chi''s photographs constitute the primary visual record of these ephemeral works and are essential to their authentication. This print, obtained from the Tseng Kwong Chi Archive administered by Muna Tseng, bears the archive''s stamp on the verso, documenting and authenticating the drawing shown in the collection.',
   'Has invoice and insurance appraisal on file.',
   0,
   '[{"src":"/collection/images/keith-haring/haring-subway-drawing-in-situ-tseng-kwong-chi.png","alt":"Keith Haring subway drawing in situ, photographed by Tseng Kwong Chi"},{"src":"/collection/images/keith-haring/haring_subway_1983_regert.jpg","alt":"Keith Haring subway drawing, white chalk on black paper, circa 1983"}]',
