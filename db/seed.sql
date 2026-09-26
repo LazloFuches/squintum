@@ -22,7 +22,7 @@ INSERT INTO artworks (slug, sort_order, title, artist, category, date_text, peri
   'An original subway drawing by Keith Haring, executed in white chalk on the matte black paper used to cover expired advertising panels in the New York City subway system. Haring produced thousands of these drawings between 1980 and 1985, working quickly in public, often attracting crowds of commuters. The drawings were never intended to be permanent and most were destroyed, peeled away, or painted over, making surviving examples rare.',
   'Has invoice and insurance appraisal on file.',
   0,
-  '[{"src":"/collection/images/keith-haring/haring_subway_1983_regert.jpg","alt":"Keith Haring subway drawing, white chalk on black paper, circa 1983"},{"src":"/collection/images/keith-haring/haring-subway-drawing-in-situ-tseng-kwong-chi.png","alt":"Keith Haring subway drawing in situ, photographed by Tseng Kwong Chi"}]',
+  '[{"src":"/collection/images/keith-haring/haring-subway-drawing-in-situ-tseng-kwong-chi.png","alt":"Keith Haring subway drawing in situ, photographed by Tseng Kwong Chi"},{"src":"/collection/images/keith-haring/haring_subway_1983_regert.jpg","alt":"Keith Haring subway drawing, white chalk on black paper, circa 1983"}]',
   '[{"label":"Object","value":"Drawing"},{"label":"Artist","value":"Keith Haring (1958-1990)"},{"label":"Date","value":"circa 1983"},{"label":"Medium","value":"White chalk on black advertising-space paper"},{"label":"Context","value":"New York City subway system"}]',
   '[]'
 );
@@ -42,7 +42,7 @@ INSERT INTO artworks (slug, sort_order, title, artist, category, date_text, peri
   '',
   '',
   1,
-  '[{"src":"/collection/images/loie-hollowell/hollowell.jpg","alt":"Work by Loie Hollowell"}]',
+  '[{"src":"/collection/images/loie-hollowell/hollowell.png","alt":"Loie Hollowell, work from the collection"}]',
   '[{"label":"Artist","value":"Loie Hollowell"}]',
   '[]'
 );
