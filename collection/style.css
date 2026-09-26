@@ -38,11 +38,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .auth-box {
   width: 100%;
-  max-width: 380px;
+  max-width: 340px;
   padding: 0 2rem;
 }
 
@@ -58,33 +59,47 @@ body {
 
 .auth-subtitle {
   font-size: 0.8rem;
+  font-weight: 300;
   color: var(--mid-gray);
   text-align: center;
   margin-bottom: 2rem;
 }
 
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+}
+
 .auth-box label {
   display: block;
-  font-size: 0.7rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.65rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--mid-gray);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.auth-box label + label {
+  margin-top: 0.25rem;
 }
 
 .auth-box input {
+  display: block;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
   color: var(--dark-gray);
   border: 1px solid var(--light-gray);
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  border-radius: 0;
+  padding: 0.7rem 0.75rem;
+  margin-bottom: 1.25rem;
   outline: none;
   transition: border-color 0.3s ease;
   background: var(--white);
+  -webkit-appearance: none;
 }
 
 .auth-box input:focus {
@@ -94,7 +109,7 @@ body {
 .auth-box button {
   display: block;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -102,9 +117,12 @@ body {
   color: var(--white);
   background: var(--dark-gray);
   border: none;
+  border-radius: 0;
   padding: 0.9rem;
+  margin-top: 0.25rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  -webkit-appearance: none;
 }
 
 .auth-box button:hover {
@@ -113,6 +131,7 @@ body {
 
 .auth-error {
   font-size: 0.8rem;
+  font-weight: 300;
   color: #c0392b;
   margin-bottom: 1rem;
   text-align: center;
@@ -120,6 +139,7 @@ body {
 
 .auth-success {
   font-size: 0.8rem;
+  font-weight: 300;
   color: #27ae60;
   margin-bottom: 1rem;
   text-align: center;
@@ -129,7 +149,9 @@ body {
   display: block;
   text-align: center;
   margin-top: 1.5rem;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   color: var(--mid-gray);
   text-decoration: none;
   transition: color 0.3s ease;
