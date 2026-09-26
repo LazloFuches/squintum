@@ -24,7 +24,7 @@ INSERT INTO artworks (slug, sort_order, title, artist, category, date_text, peri
 The accompanying photograph is by Tseng Kwong Chi (1950-1990), a photographer and close friend of Haring who systematically documented the subway drawings as Haring made them. Tseng Kwong Chi''s photographs constitute the primary visual record of these ephemeral works and are essential to their authentication. This print, obtained from the Tseng Kwong Chi Archive administered by Muna Tseng, bears the archive''s stamp on the verso, documenting and authenticating the drawing shown in the collection.',
   'Has invoice and insurance appraisal on file.',
   0,
-  '[{"src":"/collection/images/keith-haring/haring-subway-drawing-in-situ-tseng-kwong-chi.png","alt":"Keith Haring subway drawing in situ, photographed by Tseng Kwong Chi"},{"src":"/collection/images/keith-haring/haring_subway_1983_regert.jpg","alt":"Keith Haring subway drawing, white chalk on black paper, circa 1983"}]',
+  '[{"src":"/collection/images/keith-haring/haring_subway_1983_regert.jpg","alt":"Keith Haring subway drawing, white chalk on black paper, circa 1983"},{"src":"/collection/images/keith-haring/haring-subway-drawing-in-situ-tseng-kwong-chi.png","alt":"Haring subway drawing documented in situ by Tseng Kwong Chi, authentication photograph from the Tseng Kwong Chi Archive"}]',
   '[{"label":"Object","value":"Drawing"},{"label":"Artist","value":"Keith Haring (1958-1990)"},{"label":"Date","value":"circa 1983"},{"label":"Medium","value":"White chalk on black advertising-space paper"},{"label":"Context","value":"New York City subway system"}]',
   '[]'
 );
