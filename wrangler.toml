@@ -1,0 +1,8 @@
+name = "squintum"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "art-collection"
+database_id = "b3b125dc-bb5d-4b81-88a4-50feb51d6a9c"
